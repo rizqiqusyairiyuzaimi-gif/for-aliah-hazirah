@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>a little letter for aliah ♡</title>
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at center, #30151f, #100b10 75%);
+    color: #fff0f2;
+    font-family: 'Cormorant Garamond', serif;
+    overflow-x: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    text-align: center;
+}
+
+.screen {
+    width: 100%;
+    max-width: 600px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.eyebrow {
+    color: #d49aa9;
+    letter-spacing: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: clamp(38px, 9vw, 65px);
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.script {
+    font-family: 'Great Vibes', cursive;
+    color: #e8a8b9;
+    font-size: 45px;
+}
+
+.subtitle {
+    color: #c5aab2;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+
+.envelope {
+    width: 180px;
+    height: 120px;
+    margin: 0 auto 35px;
+    background: #a95770;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 15px 50px #0008;
+    cursor: pointer;
+}
+
+.envelope:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-top: 70px solid #d17c96;
+    z-index: 2;
+}
+
+.envelope:after {
+    content: "♡";
+    position: absolute;
+    top: 43px;
+    left: 75px;
+    color: white;
+    font-size: 30px;
+    z-index: 3;
+}
+
+button {
+    padding: 15px 30px;
+    border: 1px solid #d18b9f;
+    background: transparent;
+    color: #ffe9ef;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+button:hover {
+    background: #a95770;
+    box-shadow: 0 0 30px #a9577066;
+}
+
+.letter {
+    background: #f6e8e8;
+    color: #49323a;
+    text-align: left;
+    padding: clamp(25px, 6vw, 45px);
+    border-radius: 3px;
+    box-shadow: 0 20px 80px #0008;
+    animation: appear 1.2s ease;
+}
+
+.letter h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 42px;
+    font-weight: 400;
+    color: #9f526b;
+    margin-bottom: 22px;
+}
+
+.letter p {
+    font-size: 19px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.signature {
+    margin-top: 30px;
+    color: #a95770;
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px !important;
+}
+
+.end {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.end p {
+    color: #e8b4c2;
+    font-size: 17px;
+}
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    color: #d987a2;
+    opacity: .5;
+    pointer-events: none;
+    animation: float 8s linear forwards;
+}
+
+@keyframes float {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    color: #997782;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    letter-spacing: 3px;
+    margin-top: 40px;
+}
+
+/* LILY GARDEN */
+
+.lily-garden {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.lily {
+    position: absolute;
+    font-size: 45px;
+    opacity: 0.7;
+    animation: lilyFloat 6s ease-in-out infinite;
+}
+
+.lily:nth-child(1) {
+    top: 10%;
+    left: 5%;
+}
+
+.lily:nth-child(2) {
+    top: 20%;
+    right: 5%;
+    animation-delay: 1s;
+}
+
+.lily:nth-child(3) {
+    bottom: 15%;
+    left: 8%;
+    animation-delay: 2s;
+}
+
+.lily:nth-child(4) {
+    bottom: 10%;
+    right: 8%;
+    animation-delay: 3s;
+}
+
+.lily:nth-child(5) {
+    top: 50%;
+    left: 2%;
+    animation-delay: 4s;
+}
+
+@keyframes lilyFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- FIRST SCREEN -->
+    <section class="screen" id="home">
+
+        <div class="eyebrow">A LETTER FROM MY HEART</div>
+
+        <h1>for you,</h1>
+        <div class="script">my lia ♡</div>
+
+        <p class="subtitle">
+            there's something i want you to read.
+        </p>
+
+        <div class="envelope"></div>
+
+        <button onclick="openLetter()">
+            OPEN THIS, LIA ♡
+        </button>
+
+        <footer>
+            MADE JUST FOR YOU · 05 NOVEMBER 2026
+        </footer>
+
+    </section>
+
+
+    <!-- LETTER SCREEN -->
+    <section class="screen hidden" id="letterScreen">
+
+        <div class="letter">
+
+            <h2>dear lia,</h2>
+
+            <p>
+                i don't really know how to put everything into words,
+                but i know one thing. i mintak maaf sangat sangat if you regret jumpa i.
+            </p>
+
+            <p>
+                i know what you found out must have changed the way
+                you see me, and i understand why. i'm not going to
+                make excuses or pretend it wasn't wrong.
+            </p>
+
+            <p>
+                even though you tersakiti but you still layan i baik sayang , sumpah i 
+                appreciate gila benda tu , i dah taknak sakitkan hati you lagi 
+                i fall dengan you tersangatlah harder after this 
+                isokayy yayanggg if you still trust issue dengan baby but baby just nak bagitahu something
+                baby takkan buat yayanggg rasa menyesal sebab bagi baby peluang !! trust meee
+            </p>
+
+            <p>
+                i miss the little things, our conversations, the way
+                we laugh together and all those ordinary moments
+                that somehow mean so much to me.
+            </p>
+
+            <p>
+                i'm not asking you to forget what happened overnight.
+                i just hope that one day, through my actions,
+                i can show you that i'm serious about becoming better.
+            </p>
+
+            <p>
+                if you need time, i'll respect that. your feelings
+                matter, and i don't want my apology to become another
+                reason for you to feel pressured.
+            </p>
+
+            <p>
+                i'm sorry, sayanggg. truly.
+            </p>
+
+            <p class="signature">
+                always loving you till i die ♡ ,<br>
+                me. ♡
+            </p>
+
+        </div>
+
+        <div class="end">
+
+            <button onclick="showEnding()">
+                ONE MORE THING...
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ENDING SCREEN -->
+    <section class="screen hidden" id="ending">
+
+        <div class="script" style="font-size:65px;">
+            aliah ♡
+        </div>
+
+        <h1 style="font-size:35px;">
+            you matter to me.
+        </h1>
+
+        <p class="subtitle">
+            not just today, not just when things are easy.
+        </p>
+
+        <p style="color:#e8b4c2; font-size:19px; line-height:1.8;">
+            i know words are easy to write.<br>
+            i'll let my actions speak from here.
+        </p>
+
+        <div style="font-size:35px; margin-top:35px; color:#d987a2;">
+            ♡
+        </div>
+
+        <footer>
+            END OF LETTER · BUT NOT THE END OF GROWING
+        </footer>
+
+    </section>
+
+</div>
+
+
+<script>
+
+function openLetter() {
+    document.getElementById("home").classList.add("hidden");
+    document.getElementById("letterScreen").classList.remove("hidden");
+    window.scrollTo(0, 0);
+}
+
+function showEnding() {
+    document.getElementById("letterScreen").classList.add("hidden");
+    document.getElementById("ending").classList.remove("hidden");
+    window.scrollTo(0, 0);
+}
+
+// Floating hearts
+function createHeart() {
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+    heart.innerHTML = "♡";
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (15 + Math.random() * 20) + "px";
+    heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 10000);
+}
+
+setInterval(createHeart, 1000);
+
+</script>
+
+</body>
+
+<div class="lily-garden">
+    <div class="lily">🪷</div>
+    <div class="lily">🪷</div>
+    <div class="lily">🪷</div>
+    <div class="lily">🪷</div>
+    <div class="lily">🪷</div>
+    
+<div class="lily-message">
+    if i could fill your world with flowers,
+    i'd choose lilies every single time. ♡
+</div>
+
+</div>
+
+</html>
